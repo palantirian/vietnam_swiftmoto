@@ -1,0 +1,41 @@
+
+:root{
+  --bg:#0b0f14; --panel:#0f1720; --muted:#8aa0b3; --text:#e6eef6; --accent:#1f7a8c;
+  --brand:#1f7a8c; --brand2:#39c1bd; --card:#0f1b2d;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:#0b0f14;color:var(--text);line-height:1.6}
+a{color:var(--brand2);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.topbar{position:sticky;top:0;background:rgba(11,15,20,.9);backdrop-filter:saturate(150%) blur(8px);z-index:10;border-bottom:1px solid #15202b}
+.nav{display:flex;align-items:center;gap:16px;padding:10px 0}
+.nav .brand{display:flex;align-items:center;gap:10px;margin-right:auto}
+.nav .links{display:flex;flex-wrap:wrap;gap:14px}
+.nav .links a{font-size:14px;color:#cfe6ff;opacity:.9}
+.nav .cta{margin-left:10px;background:linear-gradient(90deg,var(--brand),var(--brand2));padding:8px 14px;border-radius:8px;color:white;font-weight:600}
+.hero{background:#0d1b2a url('assets/hero.svg') center/cover no-repeat;min-height:360px;display:flex;align-items:end}
+.hero .container{padding:60px 20px}
+.hero h1{font-size:42px;margin:0 0 10px;text-shadow:0 4px 24px rgba(0,0,0,.5)}
+.hero p{max-width:780px;color:#cfe6ff;font-size:18px}
+.section{padding:56px 0;border-top:1px solid #15202b}
+.section h2{margin:0 0 12px;font-size:28px}
+.kicker{color:var(--muted);text-transform:uppercase;letter-spacing:.12em;font-size:12px}
+.grid{display:grid;gap:16px}
+.grid.cols-2{grid-template-columns:1fr 1fr}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.grid.cols-2,.grid.cols-3{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid #162231;border-radius:14px;padding:18px}
+.card h3{margin:0 0 8px}
+.badge{display:inline-block;padding:2px 8px;border:1px solid #24465a;border-radius:999px;color:#b1d6ff;font-size:12px;margin-right:6px}
+.note{font-size:14px;color:#a6bacf}
+.list{margin:10px 0 0 0;padding-left:18px}
+.footer{padding:32px 0;color:#9fb3c7}
+blockquote{margin:12px 0;padding:12px 16px;background:#0e1520;border-left:3px solid var(--brand2);border-radius:6px;color:#c7d6e5}
+table{border-collapse:collapse;width:100%;background:#0f1826;border:1px solid #1b2b40}
+th,td{padding:10px;border:1px solid #1b2b40;text-align:left}
+small.muted{color:#8aa0b3}
+
+
+.photo{width:100%;height:auto;display:block;border-radius:12px;object-fit:cover;aspect-ratio:16/9}
