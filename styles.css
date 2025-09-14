@@ -37,5 +37,4 @@ table{border-collapse:collapse;width:100%;background:#0f1826;border:1px solid #1
 th,td{padding:10px;border:1px solid #1b2b40;text-align:left}
 small.muted{color:#8aa0b3}
 
-
-.photo{width:100%;height:auto;display:block;border-radius:12px;object-fit:cover;aspect-ratio:16/9}
+.photo{width:100%;max-width:100%;height:auto;display:block;border-radius:12px;image-rendering:crisp-edges}
